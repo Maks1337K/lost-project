@@ -1,0 +1,77 @@
+<!-- <mat-toolbar [style.display]="showRegisterForms[1]" class="tool-bar-position, top-navbar">
+  
+  <button routerLink="SignIn" mat-icon-button class="example-icon, burger-btn" aria-label="Example icon-button with menu icon">
+    <mat-icon>assignment_ind</mat-icon>
+  </button>
+  <p class="textStyle">Sign In</p>
+</mat-toolbar>
+<router-outlet></router-outlet>
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side" position="end">
+    <textarea></textarea>
+  </mat-drawer>
+</mat-drawer-container> -->
+<svg>
+  <defs>
+    <filter id="gooeyness">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="2.2" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 20 -10" result="gooeyness" />
+      <feComposite in="SourceGraphic" in2="gooeyness" operator="atop" />
+    </filter>
+  </defs>
+</svg>
+<nav>
+  <div class="logo">
+    <h4>
+      The Nav
+    </h4>
+  </div>
+  <ul class="nav-links">
+    <li>
+      <button>
+        <a>
+          Home
+        </a>
+      </button>
+      <button>
+        <a>
+          Offers
+        </a>
+      </button>
+      <button>
+        <a>
+          Locations
+        </a>
+      </button>
+    </li>
+  </ul>
+  <button [style.display]="showTopBtn[0]" class="btn-log">
+    <a>
+      <mat-icon>recent_actors</mat-icon>
+    </a>
+  </button>
+  <button [style.display]="showTopBtn[1]" class="btn-burger">
+    <div class="plates">
+      <div class="plate plate5" onclick="this.classList.toggle('active')">
+        <svg class="burger" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+          <path class="line line1" d="M 30,35 H 70 " />
+          <path class="line line2" d="M 50,50 H 30 L 34,32" />
+          <path class="line line3" d="M 50,50 H 70 L 66,68" />
+          <path class="line line4" d="M 30,65 H 70 " />
+        </svg>
+        <svg class="x" version="1.1" height="100" width="100" viewBox="0 0 100 100">
+          <path class="line" d="M 34,32 L 66,68" />
+          <path class="line" d="M 66,32 L 34,68" />
+        </svg>
+      </div>
+    </div>
+  </button>
+</nav>
+
+
+
+
+
+
+
+
