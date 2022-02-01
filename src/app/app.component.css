@@ -1,0 +1,7 @@
+.background {
+    width: 101%;
+    height: 101%;
+    position: fixed;
+    background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)),url(../images/background.gif) no-repeat center center fixed;
+    background-size: 100% 100%;
+}

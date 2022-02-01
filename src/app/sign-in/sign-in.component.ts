@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnDestroy } from '@angular/core';
+import { FeatureService } from '../app.feature.service';
 
 @Component({
   selector: 'app-counter-component',
@@ -6,6 +7,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./sign-in.component.css']
 })
 export class SignInComponent {
+
+  constructor(public featureService:FeatureService) 
+  {
+    featureService.hide();
+  }
+
+  ngOnDestroy()
+  {
+    this.featureService.show();
+  }
+
   name;
+
   age;
+
 }

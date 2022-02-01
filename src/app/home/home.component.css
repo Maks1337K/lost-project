@@ -15,7 +15,7 @@
     height: 400px;
     margin: 10px;
     border-radius: 15px;
-    transition: all 0.5s ease-in;
+    transition: all 0.3s ease-in;
 }
 
 .card:hover {
@@ -23,7 +23,7 @@
     color: white;
     cursor: pointer;
     transform: scale(1.03);
-    transition: all 1s ease;
+    transition: all 0.5s ease;
 }
 
 .card:hover .btn {
@@ -56,9 +56,10 @@
     align-self: center;
 }
 
-.btn:hover {
-    color: white;
-}
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
 
 .btn::before {
     content: "";
