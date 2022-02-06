@@ -11,6 +11,8 @@ export class SignInComponent {
   constructor(public featureService:FeatureService) 
   {
     featureService.hide();
+
+    this.minDate.setFullYear(this.minDate.getFullYear() - 100)
   }
 
   ngOnDestroy()
@@ -18,8 +20,14 @@ export class SignInComponent {
     this.featureService.show();
   }
 
+  currentDate:Date = new Date();
+
+  minDate:Date = new Date();
+
   name;
 
-  age;
+  email;
+
+  birth: Date | null;
 
 }

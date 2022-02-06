@@ -28,18 +28,14 @@ text-align: center;
 ">
     <div class="row">
         <span>
-        <input class="basic-slide" id="name" type="text" placeholder="Your name" /><label for="name">Name</label>
+        <input [(ngModel)]="name" class="basic-slide" id="name" type="text" placeholder="Your name" /><label for="name">Name</label>
         </span>
         <span>
-        <input class="basic-slide" id="email" type="text" placeholder="Your email" /><label for="email">Email</label>
+        <input [(ngModel)]="email" class="basic-slide" id="email" type="text" placeholder="Your email" /><label for="email">Email</label>
         </span>
         <mat-card class="demo-inline-calendar-card">
-            <mat-calendar [(selected)]="selected"></mat-calendar>
+            <div style="color: #669DB3FF; pointer-events: none;">Your date</div>
+            <mat-calendar [maxDate]="currentDate" [minDate]="minDate" [(selected)]="birth"></mat-calendar>
         </mat-card>
     </div>
 </div>
-<!-- <div>
-    <input type="text" [(ngModel)]="name"/>
-    <input type="text" [(ngModel)]="age"/>
-    <button>{{name}}</button>
-</div> -->

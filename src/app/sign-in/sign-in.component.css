@@ -8,12 +8,13 @@
 
 .demo-inline-calendar-card {
     width: 300px;
+    background-color: #efefef;
 }
 
 .row {
     max-width: 325px;
     margin: 0 auto;
-    padding: 60px 30px;
+    padding: 30px 30px;
     flex-direction: column;
     position: relative;
     z-index: 1;
@@ -76,3 +77,16 @@
 .basic-slide:focus + label, .basic-slide:active + label {
     transform: translateX(-100%);
 }
+
+::ng-deep .mat-calendar-body-label {
+      display: none;
+  }
+
+  ::ng-deep .mat-calendar-header {
+      color: #669DB3FF;
+  }
+  
+  ::ng-deep :is(.mat-calendar-body-selected){
+    background-color: #115466;
+    color: #fff;
+  }
